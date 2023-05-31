@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Agendar citas"
+             x:Class="aplication.CitasPage">
+    <ContentPage.Content>
+        <StackLayout Margin="20,35,20,20">
+            <Entry Placeholder="Ingrese su nombre completo"
+                   TextColor="#2c3e50"
+                   FontSize="Medium"
+                   BackgroundColor="#f1f2f6"
+                   x:Name="txtNombre">
+            </Entry>
+            <Entry Placeholder="Ingrese su número de célular"
+                   TextColor="#2c3e50"
+                   FontSize="Medium"
+                   BackgroundColor="#f1f2f6"
+                   x:Name="txtPhone">
+            </Entry>
+            <Entry Placeholder="Ingrese su cédula"
+                   TextColor="#2c3e50"
+                   FontSize="Medium"
+                   BackgroundColor="#f1f2f6"
+                   x:Name="txtId">
+            </Entry>
+            <Label Text="Elija el sitio de entrenamiento"
+                   FontSize="Medium"></Label>
+            <RadioButton Content="Casa" x:Name="txt1"></RadioButton>
+            <RadioButton Content="Gimnasio" x:Name="txt2"></RadioButton>
+            <Entry Placeholder="Dirección (en caso de haber elegido casa)"
+                   TextColor="#2c3e50"
+                   FontSize="Medium"
+                   BackgroundColor="#f1f2f6"
+                   x:Name="txtDirec">
+            </Entry>
+            <Entry Placeholder="Entrenamiento"
+                   TextColor="#2c3e50"
+                   FontSize="Medium"
+                   BackgroundColor="#f1f2f6"
+                   x:Name="txtTrena">
+            </Entry>
+            <Entry Placeholder="Duración de entrenamiento"
+                   TextColor="#2c3e50"
+                   FontSize="Medium"
+                   BackgroundColor="#f1f2f6"
+                   x:Name="txtDuraTrena">
+            </Entry>
+            <Entry Placeholder="Hora de inicio del entrenamiento"
+                   TextColor="#2c3e50"
+                   FontSize="Medium"
+                   BackgroundColor="#f1f2f6"
+                   x:Name="txtHourBegin">
+            </Entry>
+            <StackLayout Orientation="Horizontal">
+                <Entry Placeholder="Día"
+                       TextColor="#2c3e50"
+                       FontSize="Medium"
+                       BackgroundColor="#f1f2f6"
+                       Margin="40, 0, 250, 0"
+                       x:Name="txtDay">
+                </Entry>
+                <Entry Placeholder="Mes"
+                       TextColor="#2c3e50"
+                       FontSize="Medium"
+                       BackgroundColor="#f1f2f6"
+                       Margin="-200, 0, 250, 0"
+                       x:Name="txtMouth">
+                </Entry>
+                <Entry Placeholder="Año"
+                       TextColor="#2c3e50"
+                       FontSize="Medium"
+                       BackgroundColor="#f1f2f6"
+                       Margin="-200, 0, 250, 0"
+                       x:Name="txtYear">
+                </Entry>
+            </StackLayout>
+            <Button Text="Agendar cita"
+                    BackgroundColor="#2196f3"
+                    TextColor="WhiteSmoke"
+                    Clicked="Agendar_Clicked">
+            </Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

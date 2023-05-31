@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Registro de Usuarios"
+             x:Class="aplication.RegistrarsePage">
+    <ContentPage.Content>
+        <StackLayout Margin="20,35,20,20">
+            <Label Text="Por favor ingrese todos sus datos para registrarse."
+                   HorizontalTextAlignment="Center" FontSize="Medium"
+                   ></Label>
+            <Label Text="Documento de Identidad"
+                   TextColor="#1976d3"
+                   FontAttributes="Bold"
+                   HorizontalTextAlignment="Center"
+                   FontSize="Medium"></Label>
+            <Entry BackgroundColor="#f1f2f6"
+                   Placeholder="Ingrese su documento de identidad"
+                   FontSize="Medium"
+                   TextColor="#2c3e50"
+                   x:Name="txtId">
+            </Entry>
+            <Label Text="Nombres"
+                   TextColor="#1976d3"
+                   FontAttributes="Bold"
+                   HorizontalTextAlignment="Center"
+                   FontSize="Medium"></Label>
+            <Entry BackgroundColor="#f1f2f6"
+                   Placeholder="Ingrese su nombre completo"
+                   FontSize="Medium"
+                   TextColor="#2c3e50"
+                   x:Name="txtNombre">
+            </Entry>
+            <Label Text="Correo Electronico"
+                   TextColor="#1976d3"
+                   FontAttributes="Bold"
+                   HorizontalTextAlignment="Center"
+                   FontSize="Medium">
+            </Label>
+            <Entry BackgroundColor="#f1f2f6"
+                   Placeholder="Ingrese su correo electronico"
+                   FontSize="Medium"
+                   TextColor="#2c3e50"
+                   x:Name="txtEmail">
+            </Entry>
+            <Label Text="Asignar Contraseña"
+                   TextColor="#1976d3"
+                   FontAttributes="Bold"
+                   HorizontalTextAlignment="Center"
+                   FontSize="Medium">
+            </Label>
+            <Entry BackgroundColor="#f1f2f6"
+                   Placeholder="Asigne una contraseña"
+                   FontSize="Medium"
+                   IsPassword="True"
+                   TextColor="#2c3e50"
+                   x:Name="txtContraseña">
+            </Entry>
+            <Label Text="Confirmar Contraseña"
+                   TextColor="#1976d3"
+                   FontAttributes="Bold"
+                   HorizontalTextAlignment="Center"
+                   FontSize="Medium">
+            </Label>
+            <Entry BackgroundColor="#f1f2f6"
+                   Placeholder="Asigne nuevamente la contraseña"
+                   FontSize="Medium"
+                   IsPassword="True"
+                   TextColor="#2c3e50">
+            </Entry>
+            <Button Text="Registrarse"
+                    BackgroundColor="#2196f3"
+                    TextColor="WhiteSmoke"
+                    x:Name="btnRegistrar"
+                    Clicked="btnRegistrar_Clicked">
+            </Button>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

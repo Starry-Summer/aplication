@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Autenticación de Usuarios"
+             x:Class="aplication.LoginPage">
+
+    <ContentPage.Content>
+        <StackLayout Margin="20,35,20,20">
+            <Label Text="Si esta registrado ingrese sus datos, en modo contrario registrese."
+                   HorizontalTextAlignment="Center" FontSize="Medium"
+                   ></Label>
+            <Label Text="Usuario"
+                   TextColor="#1976d3"
+                   FontAttributes="Bold"
+                   HorizontalTextAlignment="Center"
+                   FontSize="Medium"></Label>
+            <Entry BackgroundColor="#f1f2f6"
+                   Placeholder="Ingrese su usuario"
+                   FontSize="Medium"
+                   TextColor="#2c3e50"
+                   ></Entry>
+            <Label Text="Contraseña"
+                   TextColor="#1976d3"
+                   FontAttributes="Bold"
+                   HorizontalTextAlignment="Center"
+                   FontSize="Medium"></Label>
+            <Entry BackgroundColor="#f1f2f6"
+                   Placeholder="Ingrese su contraseña"
+                   FontSize="Medium"
+                   IsPassword="True"
+                   TextColor="#2c3e50"
+                   ></Entry>
+            <Button Text="Ingresar" Clicked="ingresar_Clicked"
+                    BackgroundColor="#2196f3"
+                    TextColor="WhiteSmoke"
+                ></Button>
+            <Button Text="Registrarse" Clicked="registrar_Clicked"
+                    BackgroundColor="#2196f3"
+                    TextColor="WhiteSmoke"
+                ></Button>
+            <Button Text="Recuperar Contraseña" Clicked="recuperar_Clicked"
+                    BackgroundColor="#2196f3"
+                    TextColor="WhiteSmoke"
+                ></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

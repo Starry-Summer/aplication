@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Recuperación de Contraseña"
+             x:Class="aplication.RecuperContrasena">
+    <ContentPage.Content>
+        <StackLayout Margin="20,35,20,20">
+            <Label Text="La nueva contraseña sera enviada al correo electronico registrado."
+                   HorizontalTextAlignment="Center" FontSize="Medium"
+                   ></Label>
+            <Label Text="Correo Electronico"
+                   TextColor="#1976d3"
+                   FontAttributes="Bold"
+                   HorizontalTextAlignment="Center"
+                   FontSize="Medium"></Label>
+            <Entry BackgroundColor="#f1f2f6"
+                   Placeholder="Ingrese su correo electronico"
+                   FontSize="Medium"
+                   TextColor="#2c3e50"
+                   ></Entry>
+            <Button Text="Recuperar Contraseña"
+                    BackgroundColor="#2196f3"
+                    TextColor="WhiteSmoke"
+                ></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Información"
+             x:Class="aplication.ContratarPP">
+    <ContentPage.Content>
+        <StackLayout Margin="20,35,20,20">
+            <Label Text="Entrenador"
+                   HorizontalOptions="CenterAndExpand"
+                   TextColor="#1976d3"
+                   FontSize="Medium"
+                   FontAttributes="Bold">
+            </Label>
+            <Label Text="Nombre: Pedro Pascales"
+                   ></Label>
+            <Label Text="Horarios:"
+                   HorizontalOptions="CenterAndExpand">
+            </Label>
+            <Label Text="Martes: 7:00 Am - 9:00 Am. Lugar: Gimnasio"
+                   ></Label>
+            <Label Text="Jueves: 7:00 Am - 9:00 Am. Lugar: Gimnasio"
+                   ></Label>
+            <Label Text="Sábado: 3:00 Pm - 5:00 Pm. Estiramiento y aerobicos"
+                   ></Label>
+            <Button Text="Agendar cita"
+                    BackgroundColor="#2196f3"
+                    TextColor="WhiteSmoke"
+                    Clicked="AgendaCita_Clicked"></Button>
+            <Button Text="Volver"
+                    BackgroundColor="#2196f3"
+                    TextColor="WhiteSmoke"
+                    Clicked="Volver_Clicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
